@@ -1,0 +1,33 @@
+C文件流操作：
+
+1.fseek
+	int fseek(FILE *stream, long int offset, int whence)
+	功能：设定文件指针的位置
+
+	参数:
+		stream: 需要读取的文件流
+		whence: 文件源指针的位置，值可以是以下三个中的一个: SEEK_SET、SEEK_CUR、SEEK_END分别表示文件开头位置，
+				文件当前位置，文件结尾位置。
+		offset: 表示以whence为基点的偏移量的大小
+	
+	返回值:
+		执行成功返回0，失败返回负数值
+
+2.malloc函数
+	void *malloc(int num)
+	功能:在堆区分配一块指定大小的内存空间，用来存放数据，这块内存空间在函数执行完后不会被初始化，值是未知的。
+
+3.calloc函数
+	void *calloc(int num, int size)
+	在内存中动态分配num个长度为size的连续空间，并将每一个字节都初始化为0.
+	作用和malloc类似
+
+4.realloc
+	void *realloc(void *ptr, size_t size)
+	功能：尝试重新调整之前调用malloc或calloc所分配的ptr所指向的内存块大小，新的大小为size
+	
+	参数:
+		ptr: 指针指向一个要重新分配内存的内存块，该内存块之前是通过malloc、calloc或者realloc进行
+			 分配内存的。如果为空指针，则会分配一个新的内存块，且函数返回一个指向它的指针。
+		size: 内存块的新的大小，以字节为单位。如果大小为0，且ptr指向一个已经存在的内存块，则ptr所
+			  指向的内存块会被释放，并返回一个空指针。
