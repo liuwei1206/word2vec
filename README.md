@@ -1,8 +1,7 @@
 # word2vec
-analysis the source code of word2vec
+The detailed analysis (in Chinese) of the source code of google's word2vec. I really appreciate this source code since it is simple and efficient. However, it is not easy to understand unless you know both the paper and c language quite well.
 
-Detailed explanation of the origin source code of google's word2vec
 
-中文博客详解参考: https://blog.csdn.net/jeryjeryjery/article/details/80245924
+A Chinese blog is shown here: https://blog.csdn.net/jeryjeryjery/article/details/80245924
 
-A PyTorch version of word2vec: https://github.com/liuwei1206/CNN_CBOW
+A PyTorch implementation of word2vec is here: https://github.com/liuwei1206/CNN_CBOW
